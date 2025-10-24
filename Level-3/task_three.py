@@ -13,6 +13,18 @@ def calculate_price_after_vat(price: int) -> int:
     return price*0.8
 
 
+def create_tax_receipt(tax_info: list[list], old_total: int) -> str:
+    """Returns the tax receipt from delivered info"""
+    formatted_receipt = 'VAT RECEIPT\n\n'
+    new_total = 0
+    for line in tax_info:
+        new_line = line[0][:-4] + f"{line[1]:.2f}"
+        new_total += line[1]
+        formatted_receipt += new_line + '\n'
+    formatted_receipt += f"\nTotal: £{new_total:.2f}\nVAT: £{(old_total-new_total):.2f}\nTotal inc VAT: £{old_total:.2f}"
+    return formatted_receipt
+
+
 def generate_invoice(receipt_string: str) -> str:
     receipt_lines = receipt_string.split('\n')
     tax_info = []
@@ -25,9 +37,7 @@ def generate_invoice(receipt_string: str) -> str:
         new_price = calculate_price_after_vat(price)
         tax_info.append([line, new_price])
 
-    print(tax_info)
-
-    return  # return the invoice string
+    return create_tax_receipt(tax_info, old_total)  # return the invoice string
 
 
 if __name__ == "__main__":
