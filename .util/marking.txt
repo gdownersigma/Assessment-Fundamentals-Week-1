@@ -4,23 +4,19 @@ rootdir: /home/runner/work/Assessment-Fundamentals-Week-1/Assessment-Fundamental
 collected 27 items
 
 Level-1/test_one_task.py .............                                   [ 48%]
-Level-2/test_two_task.py FFFFFFF                                         [ 74%]
+Level-2/test_two_task.py F.FFFFF                                         [ 74%]
 Level-3/test_three_task.py FFFFFFF                                       [100%]
 
-======================== 14 failed, 13 passed in 0.11s =========================
+======================== 13 failed, 14 passed in 0.11s =========================
 ************* Module task_one
 Level-1/task_one.py:23:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
 ************* Module task_two
-Level-2/task_two.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-2/task_two.py:15:18: W0613: Unused argument 'item' (unused-argument)
-Level-2/task_two.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-2/task_two.py:20:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
-Level-2/task_two.py:20:21: W0613: Unused argument 'basket' (unused-argument)
+Level-2/task_two.py:22:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
 ************* Module task_three
 Level-3/task_three.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
 Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer scope (line 12) (redefined-outer-name)
 Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.69/10 (previous run: 7.69/10, +0.00)
+Your code has been rated at 9.04/10 (previous run: 9.04/10, +0.00)
 
