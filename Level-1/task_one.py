@@ -22,21 +22,21 @@ def add_to_basket(item: dict) -> list:
 
 def generate_receipt(basket: list) -> str:
     for item in basket:
-        formatted_money = format_money(item['price']))
-            return  # return the receipt string
+        formatted_money = format_money(item['price'])
+        return  # return the receipt string
 
 
-            if __name__ == "__main__":
-            add_to_basket({
-                "name": "Bread",
-                "price": 0
-            })
-            add_to_basket({
-                "name": "Milk",
-                "price": 0.80
-            })
-            add_to_basket({
-                "name": "Butter",
-                "price": 1.20
-            })
-            print(generate_receipt(basket))
+if __name__ == "__main__":
+    add_to_basket({
+        "name": "Bread",
+        "price": 0
+    })
+    add_to_basket({
+        "name": "Milk",
+        "price": 0.80
+    })
+    add_to_basket({
+        "name": "Butter",
+        "price": 1.20
+    })
+    print(generate_receipt(basket))
