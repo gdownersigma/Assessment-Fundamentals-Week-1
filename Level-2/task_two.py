@@ -19,6 +19,12 @@ def add_to_basket(item: dict) -> list:
     return basket
 
 
+def format_receipt(name: str, count: int, price: int) -> str:
+    """function to format the receipt from all the information"""
+    return name + ' x ' + str(count) + ' - ' + \
+        format_money(price*count) + '\n'
+
+
 def generate_receipt(basket: list) -> str:
     """Returns the receipt formatted correctly"""
     if len(basket) == 0:  # EDGE CASE empty basket
@@ -26,11 +32,16 @@ def generate_receipt(basket: list) -> str:
 
     receipt_to_send = ''
     total = 0
+    temp_basket = basket
+    count = 0
 
-    for item in basket:
-        total += item['price']
-        receipt_to_send += item['name'] + ' - ' + \
-            format_money(item['price']) + '\n'
+    while temp_basket:
+        item = temp_basket[0]
+        count = basket.count(item)
+
+        total += item['price'] * count
+
+        receipt_to_send += format_receipt(item['name'], count, item['price'])
 
     receipt_to_send += f"Total: {format_money(total, is_total=True)}"
     return receipt_to_send  # return the receipt string
@@ -41,16 +52,21 @@ if __name__ == "__main__":
         "name": "Bread",
         "price": 1.80
     })
+    print(generate_receipt(basket))
     add_to_basket({
         "name": "Bread",
         "price": 1.80
     })
-    add_to_basket({
-        "name": "Milk",
-        "price": 0.80
-    })
-    add_to_basket({
-        "name": "Butter",
-        "price": 1.20
-    })
+    # add_to_basket({
+    #     "name": "Bread",
+    #     "price": 1.80
+    # })
+    # add_to_basket({
+    #     "name": "Milk",
+    #     "price": 0.80
+    # })
+    # add_to_basket({
+    #     "name": "Butter",
+    #     "price": 1.20
+    # })
     print(generate_receipt(basket))
