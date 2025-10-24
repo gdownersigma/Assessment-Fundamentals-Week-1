@@ -4,19 +4,19 @@ rootdir: /home/runner/work/Assessment-Fundamentals-Week-1/Assessment-Fundamental
 collected 27 items
 
 Level-1/test_one_task.py .............                                   [ 48%]
-Level-2/test_two_task.py F.FFFFF                                         [ 74%]
+Level-2/test_two_task.py .......                                         [ 74%]
 Level-3/test_three_task.py FFFFFFF                                       [100%]
 
-======================== 13 failed, 14 passed in 0.11s =========================
+========================= 7 failed, 20 passed in 0.12s =========================
 ************* Module task_one
 Level-1/task_one.py:23:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
 ************* Module task_two
-Level-2/task_two.py:22:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
+Level-2/task_two.py:28:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
 ************* Module task_three
 Level-3/task_three.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
 Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer scope (line 12) (redefined-outer-name)
 Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.04/10 (previous run: 9.04/10, +0.00)
+Your code has been rated at 9.17/10 (previous run: 9.17/10, +0.00)
 
