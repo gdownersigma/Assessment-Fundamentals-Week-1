@@ -5,18 +5,17 @@ collected 27 items
 
 Level-1/test_one_task.py .............                                   [ 48%]
 Level-2/test_two_task.py .......                                         [ 74%]
-Level-3/test_three_task.py ...FFFF                                       [100%]
+Level-3/test_three_task.py .......                                       [100%]
 
-========================= 4 failed, 23 passed in 0.11s =========================
+============================== 27 passed in 0.10s ==============================
 ************* Module task_one
 Level-1/task_one.py:23:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
 ************* Module task_two
 Level-2/task_two.py:28:21: W0621: Redefining name 'basket' from outer scope (line 6) (redefined-outer-name)
 ************* Module task_three
-Level-3/task_three.py:24:0: C0301: Line too long (121/100) (line-too-long)
-Level-3/task_three.py:28:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:28:21: W0621: Redefining name 'receipt_string' from outer scope (line 44) (redefined-outer-name)
+Level-3/task_three.py:27:0: C0301: Line too long (121/100) (line-too-long)
+Level-3/task_three.py:54:4: C0103: Constant name "receipt_string" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.38/10 (previous run: 9.38/10, +0.00)
+Your code has been rated at 9.53/10 (previous run: 9.53/10, +0.00)
 
