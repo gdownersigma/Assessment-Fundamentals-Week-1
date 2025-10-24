@@ -40,8 +40,8 @@ def generate_receipt(basket: list) -> str:
         count = basket.count(item)
 
         total += item['price'] * count
-
         receipt_to_send += format_receipt(item['name'], count, item['price'])
+        temp_basket = [i for i in temp_basket if i != item]
 
     receipt_to_send += f"Total: {format_money(total, is_total=True)}"
     return receipt_to_send  # return the receipt string
@@ -52,21 +52,20 @@ if __name__ == "__main__":
         "name": "Bread",
         "price": 1.80
     })
-    print(generate_receipt(basket))
     add_to_basket({
         "name": "Bread",
         "price": 1.80
     })
-    # add_to_basket({
-    #     "name": "Bread",
-    #     "price": 1.80
-    # })
-    # add_to_basket({
-    #     "name": "Milk",
-    #     "price": 0.80
-    # })
-    # add_to_basket({
-    #     "name": "Butter",
-    #     "price": 1.20
-    # })
+    add_to_basket({
+        "name": "Bread",
+        "price": 1.80
+    })
+    add_to_basket({
+        "name": "Milk",
+        "price": 0.80
+    })
+    add_to_basket({
+        "name": "Butter",
+        "price": 1.20
+    })
     print(generate_receipt(basket))
