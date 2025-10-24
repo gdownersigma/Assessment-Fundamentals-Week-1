@@ -7,30 +7,33 @@ The only variable you are allowed to use in the global scope is the basket below
 basket = []
 
 
-def format_money(price: int) -> str:
+def format_money(price: int, is_total: bool = False) -> str:
     """Returns a string of the nicely formatted price."""
-    if price == 0:  # EDGE CASE 'item should be free'
+    if price == 0 and not is_total:  # EDGE CASE 'item should be free'
         return 'Free'
-
     return f"£{price:.2f}"
 
 
 def add_to_basket(item: dict) -> list:
+    """Returns the updated basket."""
     basket.append(item)
     return basket
 
 
 def generate_receipt(basket: list) -> str:
+    """Returns the receipt formatted correctly"""
     if len(basket) == 0:  # EDGE CASE empty basket
         return "Basket is empty"
+
     receipt_to_send = ''
     total = 0
+
     for item in basket:
         total += item['price']
         receipt_to_send += item['name'] + ' - ' + \
             format_money(item['price']) + '\n'
 
-    receipt_to_send += f"Total: {format_money(total)}"
+    receipt_to_send += f"Total: {format_money(total, is_total=True)}"
     return receipt_to_send  # return the receipt string
 
 
