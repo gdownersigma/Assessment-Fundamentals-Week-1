@@ -9,10 +9,10 @@ Level-3/test_three_task.py FFFFFFF                                       [100%]
 
 ============================== 27 failed in 0.06s ==============================
 ************* Module task_one
-Level-1/task_one.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-1/task_one.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-1/task_one.py:15:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
-Level-1/task_one.py:15:21: W0613: Unused argument 'basket' (unused-argument)
+Level-1/task_one.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
+Level-1/task_one.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
+Level-1/task_one.py:23:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
+Level-1/task_one.py:25:8: W0612: Unused variable 'formatted_money' (unused-variable)
 ************* Module task_two
 Level-2/task_two.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:15:18: W0613: Unused argument 'item' (unused-argument)
@@ -25,5 +25,5 @@ Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer s
 Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
 
 ------------------------------------------------------------------
-Your code has been rated at 5.56/10 (previous run: 5.56/10, +0.00)
+Your code has been rated at 6.36/10 (previous run: 6.36/10, +0.00)
 
