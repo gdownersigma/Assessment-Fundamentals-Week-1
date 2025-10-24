@@ -3,14 +3,12 @@ platform linux -- Python 3.12.11, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-1/Assessment-Fundamentals-Week-1
 collected 27 items
 
-Level-1/test_one_task.py ...........F.                                   [ 48%]
+Level-1/test_one_task.py .............                                   [ 48%]
 Level-2/test_two_task.py FFFFFFF                                         [ 74%]
 Level-3/test_three_task.py FFFFFFF                                       [100%]
 
-======================== 15 failed, 12 passed in 0.11s =========================
+======================== 14 failed, 13 passed in 0.11s =========================
 ************* Module task_one
-Level-1/task_one.py:18:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-1/task_one.py:23:0: C0116: Missing function or method docstring (missing-function-docstring)
 Level-1/task_one.py:23:21: W0621: Redefining name 'basket' from outer scope (line 7) (redefined-outer-name)
 ************* Module task_two
 Level-2/task_two.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
@@ -24,5 +22,5 @@ Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer s
 Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.18/10 (previous run: 7.18/10, +0.00)
+Your code has been rated at 7.69/10 (previous run: 7.69/10, +0.00)
 
